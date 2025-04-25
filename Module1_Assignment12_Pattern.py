@@ -1,0 +1,1 @@
+# Print this pattern using nested for Loop.

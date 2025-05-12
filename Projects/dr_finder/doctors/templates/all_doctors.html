@@ -1,0 +1,17 @@
+<html>
+<body>
+<form>
+<input type="text" name="q" placeholder="Search"/>
+<button type="submit">Search</button> 
+
+<h1>Doctor List</h1>
+<table border="2">
+{% for x in data %}
+<tr><td>{{x.firstname}}</td><td>{{x.lastname}}</td><td>{{x.speciality}}</td><td>{{x.consultant_fees}}</td></tr>
+{% endfor %}
+</table>
+</form>
+
+</body>
+
+</html>

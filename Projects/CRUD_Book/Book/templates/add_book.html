@@ -1,0 +1,25 @@
+<html>
+<body>
+<form method="post">
+{% csrf_token %}
+<h3>Book</h3>
+<hr>
+{% if messages %}
+{% for message in messages %}
+{{message}}
+{%endfor%}
+{%endif%}
+<p>Book ID <input type="text" name="book_id" placeholder="Enter Book id" required>
+<p>Book Name/Title <input type="text" name="book_name" placeholder="Enter BookTitle" required>
+<p>Book Publisher <input type="text" name="book_publisher" placeholder="Enter Publisher" required>
+<p>Book Price <input type="text" name="book_price" placeholder="Enter Price" required>
+        
+    <p>View all the Books <a href="/viewAll">Click Here</a></p>
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+
+
+
+</html>

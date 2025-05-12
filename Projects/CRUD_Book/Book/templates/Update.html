@@ -1,0 +1,10 @@
+
+<h1> Update Member </h1>
+<form action="../updateRecord/{{data.book_id}}" method="post">
+{% csrf_token %}
+<p>Enter Book Title <input name="title" value="{{data.book_name}}">
+<p>Enter Book Publisher <input name="pub" value="{{data.book_publisher}}">
+<p>Enter Price <input name="price" value="{{data.book_price}}"> </p>
+
+<p><input type="submit" value="Update"></p>
+</form>
